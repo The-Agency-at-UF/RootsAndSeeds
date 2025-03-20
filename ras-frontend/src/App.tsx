@@ -1,10 +1,16 @@
 import React from 'react';
+import { About, Innovation, Landing, Marketing, Overview } from './tilesets/index';
+
 
 function App() {
   return (
-    <div>
-     <p className="text-black-500 text-2xl underline font-bold"> Begin Coding Here! </p>
-    </div>
+    <>
+    <About/>
+    <Innovation/>
+    <Landing/>
+    <Marketing/>
+    <Overview/>
+    </>
   );
 }
 
