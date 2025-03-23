@@ -1,12 +1,10 @@
 import React from 'react';
 import tacoImg from '../images/taco.png';
-import brownArrow from '../images/brownArrow.png';
-import greenArrow from '../images/greenArrow.png';
+import arrow from '../images/arrows.png'
 import splatter from '../images/Innovation_splatter.png'
 import './Innovation.css';
 
 function Innovation() {
-  const arrowCount = 12;
 
   return (
     <section className="innovation-section">
@@ -14,6 +12,11 @@ function Innovation() {
 
       <div className="innovation-header">
         <h2 className="innovation-title">Innovation</h2>
+        <img
+          src = {arrow}
+          alt = "row of arrows"
+          className= 'arrow'
+        />
       </div>
       <div className="innovation-content">
         <div className="green-text-box">

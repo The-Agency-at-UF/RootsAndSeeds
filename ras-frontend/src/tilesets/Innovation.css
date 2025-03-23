@@ -11,10 +11,10 @@
 .innovation-img {
   position: absolute;
   top: 0;
-  transform: translateY(45px);
-  right: 64px;
+  transform: translateY(120px);
+  right: 75px;
   height: auto;
-  width: 610px;
+  width: 600px;
   z-index: 1;
 }
 
@@ -28,11 +28,18 @@
   z-index: 2;
 }
 
+.arrow{
+  height: auto;
+  width: 20%;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
 .innovation-title {
   color: #be790b;
   font-family: 'Lilita One', cursive;
   font-weight: 400;
-  font-size: 88px;
+  font-size: 80px;
   margin: 0;
   margin-bottom: 4rem;
 }
@@ -49,23 +56,21 @@
   background-color: #c4db96;
   border-radius: 3.2px;
   padding: 0.8rem;
-  width: 720px;
-  height: 372px;
+  width: 864px;      /* increased from 720px */
+  height: 446px;     /* increased from 372px */
   font-family: "Inter", sans-serif;
 }
 
 .green-text-box > p {
-  margin-top: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  font-size: 15.6px;
+  margin: 2rem;
+  font-size: 18.7px; /* increased from 15.6px */
   line-height: 1.35;
   font-weight: 400;
 }
 
 .background-splatter {
     position: absolute;
+    transform: translateY(100px);
     top: 0;         
     right: 0;       
     width: 70%;     
