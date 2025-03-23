@@ -1,4 +1,5 @@
 import React from 'react'
+import headerImg from '../images/title_card.png'
 import arrow from '../images/arrows.png'
 import flower from '../images/about_flower.png'
 import foodPlatter from '../images/foodPlate.png'
@@ -9,8 +10,14 @@ import pattern_bottom from '../images/abt_backgroundBottom.png'
 import './About.css'
 
 function About(){
-    return (<section className='about-section'>
+    return (
 
+    <section className='about-section'>
+        <img
+            src = {headerImg}
+            alt = "Florida fresh dining title image"
+            className= 'title-img'
+         />
         <div className='about-content'>
             <div className="about-image-container">
                 <img src={imageBacking} alt="Green backing" className="image-backing" />
