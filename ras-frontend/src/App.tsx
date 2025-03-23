@@ -7,9 +7,9 @@ function App() {
     <>
     <About/>
     <Innovation/>
+    <Overview/>
     <Landing/>
     <Marketing/>
-    <Overview/>
     </>
   );
 }
