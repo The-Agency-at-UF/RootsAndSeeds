@@ -8,7 +8,6 @@ function App() {
     <About/>
     <Innovation/>
     <Overview/>
-    <Landing/>
     <Marketing/>
     <SocialMedia/>
     <Overview/>
