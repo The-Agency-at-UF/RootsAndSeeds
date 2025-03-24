@@ -44,7 +44,7 @@
     transform: translateY(-395px);
     width: 35%;
     height: auto;
-    z-index: -1;
+    z-index: 1;
   }
 
   .overview-arrows{

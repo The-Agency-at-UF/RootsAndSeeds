@@ -107,5 +107,5 @@
   width: 50%;
   height: auto;
   transform: translateY(-735px);
-  z-index: -1;
+  z-index: 1;
 }
