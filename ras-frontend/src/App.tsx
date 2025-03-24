@@ -1,16 +1,16 @@
 import React from 'react';
-import { About, Innovation, Landing, Marketing, Overview } from './tilesets/index';
+import { About, Innovation, Landing, Marketing, Overview, SocialMedia } from './tilesets/index';
 
 
 function App() {
   return (
-    <>
+    <div className="bg-[#faf8f2]">
     <About/>
     <Innovation/>
-    <Landing/>
-    <Marketing/>
     <Overview/>
-    </>
+    <Marketing/>
+    <SocialMedia/>
+    </div>
   );
 }
 
