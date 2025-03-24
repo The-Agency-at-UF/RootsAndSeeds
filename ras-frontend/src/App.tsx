@@ -10,13 +10,9 @@ function App() {
     <Overview/>
     <Landing/>
     <Marketing/>
-<<<<<<< HEAD
     <SocialMedia/>
-    </>
-=======
     <Overview/>
     </div>
->>>>>>> f1299c2 (feat: added googleFont and did minor innovation work)
   );
 }
 
