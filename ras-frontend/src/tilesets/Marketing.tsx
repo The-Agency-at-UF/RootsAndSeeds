@@ -4,7 +4,7 @@ import image2 from "./MarketingInnovation-2.png";
 
 function Marketing(){
     return (<>
-        <div className="bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
+        <div className="wrapper bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="w-auto" src={image1}/>
                 <img className="w-auto" src={image2}/>
