@@ -3,3 +3,4 @@ export { default as Innovation } from './Innovation';
 export { default as Landing } from './Landing';
 export { default as Marketing } from './Marketing';
 export { default as Overview } from './Overview';
+export { default as SocialMedia } from './SocialMedia';

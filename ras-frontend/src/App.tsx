@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Innovation, Landing, Marketing, Overview } from './tilesets/index';
+import { About, Innovation, Landing, Marketing, Overview, SocialMedia } from './tilesets/index';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <Overview/>
     <Landing/>
     <Marketing/>
+    <SocialMedia/>
     </>
   );
 }
