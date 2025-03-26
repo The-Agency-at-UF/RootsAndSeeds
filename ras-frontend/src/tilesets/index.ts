@@ -6,3 +6,4 @@ export { default as Overview } from './Overview';
 export { default as SocialMedia } from './SocialMedia';
 export { default as Education } from './Education';
 export { default as Program } from './Program';
+export { default as Feedback } from './Feedback';

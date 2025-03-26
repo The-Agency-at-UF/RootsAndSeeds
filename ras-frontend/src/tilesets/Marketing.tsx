@@ -6,7 +6,7 @@ import pic from "./MarketingPic.svg"
 
 function Marketing(){
     return (<>
-        <div className="wrapper bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
+        <div className="max-w-[1440px] mt-16 bg-[#C4DB96] flex flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="h-full" src={image1}/>
                 <img className="h-full" src={image2}/>

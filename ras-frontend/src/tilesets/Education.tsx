@@ -10,7 +10,7 @@ import arrow from "./EducationArrow.svg"
 function Education(){
     return (<>
     <div>
-        <div className="wrapper bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
+        <div className="max-w-[1440px] mt-16 bg-[#C4DB96] flex flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="w-auto" src={image1}/>
             </div>
@@ -31,11 +31,11 @@ function Education(){
             </div>
         </div>
         <div className="mt-12 font-inter flex flex-col justify-center items-center">
-            <div className="flex flex-col md:flex-row"> 
-                <img className="md:w-1/3 w-full" src={tl}/>
-                <img className="md:w-1/3 w-full" src={tr}/>
+            <div className="flex flex-row"> 
+                <img className="w-1/3 " src={tl}/>
+                <img className="w-1/3" src={tr}/>
                 {/* Green section */}
-                <div className="flex flex-col md:w-1/3 w-full justify-end pb-3">
+                <div className="flex flex-col w-1/3 justify-end pb-3">
                 <div className="w-[97%] h-full ml-auto flex justify-around flex-col ml-3" style={{ backgroundImage: `url(${bg})`}}>
                     <div className="relative ml-6 mr-6">
                     <p className="mb-6"> 
@@ -79,8 +79,8 @@ function Education(){
                 </div>
             </div>
             <div className="flex flex-col md:flex-row">
-                <img className="md:w-1/2 w-full" src={bl}/>
-                <img className="md:w-1/2 w-full" src={br}/>
+                <img className="w-1/2" src={bl}/>
+                <img className="w-1/2" src={br}/>
             </div> 
         </div>
         </div>
