@@ -10,55 +10,101 @@ body {
   margin: 0 auto;
 }
 
-.overview-section{
-    position: relative;
+.overview-section {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: -4rem;
+}
+
+/* Image container for image 1 sits at the top */
+.overview-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Image 1: scaled down and positioned as desired */
+.overview-food-1 {
+  max-width: auto;
+  height: 400px;
+  object-fit: cover;
+  transform: scale(0.75) translateX(-28rem) translateY(2.5rem);
+  transform-origin: center;
+  margin-right: -7rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Image 2: remove the huge translateY and use negative margin instead */
+.overview-food-2 {
+  float: right;
+  margin-left: 0.5rem; /* keeps text away from the image */
+  transform: scale(0.75); /* no vertical translate here */
+  position: relative;
+  margin-top: -39.5rem; /* adjust this value to move image 2 up as needed */
 }
 
 .overview-title {
-    color: #be790b;
-    font-family: 'Lilita One', cursive;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 1.1;
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-  }
+  color: #be790b;
+  font-family: 'Lilita One', cursive;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.1;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
 
-  .overview-header {
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    margin-top: 8em;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .overview-info {
-    flex: 1;
-    margin-right: 2rem;
-    margin-left: 3rem;
-    font-family: "Inter", sans-serif;
-    font-size: 13.8px;
-    line-height: 1.35;
-  }
-  
-  .overview-info > p {
-    margin-bottom: 1.25rem;
-    margin-right: 2rem;
-  }
-  
-  .overview-flower {
-    position: absolute;
-    transform: translateY(-395px);
-    width: 35%;
-    height: auto;
-    z-index: 1;
-  }
+/* Header sits directly below image 1 */
+.overview-header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
 
-  .overview-arrows{
-    margin-top: 100px;
-    height: auto;
-    width: 20%;
-    transform: translateX(-40px);
-  }
+.overview-info {
+  flex: 1;
+  margin-left: 3rem;
+  font-family: "Inter", sans-serif;
+  font-size: 13.8px;
+  line-height: 1.35;
+}
+
+.overview-info > p {
+  margin-bottom: 1.25rem;
+}
+
+.overview-flower {
+  position: absolute;
+  transform: translateY(-395px);
+  width: 35%;
+  height: auto;
+  z-index: 1;
+}
+
+.overview-arrows {
+  margin-top: 100px;
+  height: auto;
+  width: 20%;
+  transform: translateX(-40px);
+}
+
+/* The .no-wrap container clears the float without an extra transform */
+.no-wrap {
+  display: block;
+  clear: both;
+  position: relative;
+  /* Remove transform and rely on margins for positioning */
+  transform: translateY(-3rem);
+  font-family: "Inter", sans-serif;
+  font-size: 13.8px;
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+.no-wrap > p{
+  margin-bottom: 1.25rem;
+}
+
