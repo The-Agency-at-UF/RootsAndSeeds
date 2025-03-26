@@ -9,7 +9,7 @@ import right from "./RightArrow.svg";
 function Program() {
     return (
         <>
-            <div className="flex flex-col justify-center items-center">
+            <div className="max-w-[1440px] flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center m-5">
                     <div className="flex flex-row">
                     <img className="mr-5" src ={left}/>
