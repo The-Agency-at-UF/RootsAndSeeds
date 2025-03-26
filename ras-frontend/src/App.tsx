@@ -11,7 +11,6 @@ function App() {
     <Marketing/>
     <SocialMedia/>
     <Program/>
-    <Overview/>
     <Education/>
     <Feedback/>
     </div>
