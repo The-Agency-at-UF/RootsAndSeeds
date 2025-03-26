@@ -1,16 +1,21 @@
 import React from 'react'
 import image1 from "./MarketingInnovation-1.png";
 import image2 from "./MarketingInnovation-2.png";
+import rightarrow from "./EducationArrow.svg";
+import pic from "./MarketingPic.svg"
 
 function Marketing(){
     return (<>
         <div className="wrapper bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
-                <img className="w-auto" src={image1}/>
-                <img className="w-auto" src={image2}/>
+                <img className="h-full" src={image1}/>
+                <img className="h-full" src={image2}/>
             </div>
-            <div className="bg-[#C4DB96] flex flex-col justify-around m-5">
-            <h1 className="text-[#BE790B] font-lilita text-5xl"> Marketing & Advertising </h1>
+            <div className="w-full h-full bg-[#C4DB96] flex flex-col justify-between space-y-6 m-5">
+            <div className="flex flex-row items-end w-full">
+            <h1 className="text-[#BE790B] font-lilita text-7xl"> Marketing & <br/> Materials</h1>
+            <img className="h-auto mb-4 translate-x-[-70px]" src={rightarrow} />
+            </div>
             <p className="font-inter"> We tailored marketing strategies to our Gen Z students by utilizing social media — especially Instagram, which a majority of young adults use daily — both leading up 
             to and during the trial. </p>
             <p className="font-inter">
@@ -36,6 +41,7 @@ function Marketing(){
             </p>
             </div>
         </div>
+        <img className="mt-16 mb-16" src={pic}/>
     </>);
 }
 

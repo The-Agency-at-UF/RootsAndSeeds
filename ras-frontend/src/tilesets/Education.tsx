@@ -4,15 +4,21 @@ import tl from "./Top-Left.png";
 import tr from "./Top-Right.png";
 import br from "./Bottom-Right.png";
 import bl from "./Bottom-Left.png";
+import bg from "./Background.svg"
+import arrow from "./EducationArrow.svg"
 
 function Education(){
     return (<>
+    <div>
         <div className="wrapper bg-[#C4DB96] flex flex-col md:flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="w-auto" src={image1}/>
             </div>
             <div className="bg-[#C4DB96] flex flex-col justify-around m-5">
-            <h1 className="text-[#BE790B] font-lilita text-5xl"> Educational Materials </h1>
+            <div className="flex flex-row items-end w-full">
+            <h1 className="text-[#BE790B] font-lilita text-7xl">Educational <br/> Materials</h1>
+            <img className="h-auto mb-4 translate-x-[-40px]" src={arrow} />
+            </div>
             <p> Our registered campus dietitian, Syd Watkins, hosted educational tables during the trial to promote the benefits of incorporating plant-based options into a well-balanced diet.</p> 
             <div>
             <p className="font-bold"> The themes of these tables included: </p>
@@ -24,61 +30,59 @@ function Education(){
             </div>
             </div>
         </div>
-        <div className="wrapper font-inter flex flex-col justify-center items-center">
+        <div className="mt-12 font-inter flex flex-col justify-center items-center">
             <div className="flex flex-col md:flex-row"> 
-                <img className="w-auto" src={tl}/>
-                <img className="w-auto" src={tr}/>
+                <img className="md:w-1/3 w-full" src={tl}/>
+                <img className="md:w-1/3 w-full" src={tr}/>
                 {/* Green section */}
-                <div className="flex flex-col w-1/5 bg-[#53683F] justify-end pb-3">
-                <div className="w-[97%] h-full ml-auto flex justify-around flex-col bg-[#C4DB96] ml-3">
-                    <div className="ml-3">
-                    <p> 
+                <div className="flex flex-col md:w-1/3 w-full justify-end pb-3">
+                <div className="w-[97%] h-full ml-auto flex justify-around flex-col ml-3" style={{ backgroundImage: `url(${bg})`}}>
+                    <div className="relative ml-6 mr-6">
+                    <p className="mb-6"> 
                     <span className="font-bold"> Top Left </span>
-                    <p>
+                    </p>
+                    <p className="mb-6">
                     Scaling down environmental impacts
                     to a single burger helps students 
                     understand how their own food choices 
                     can make a difference.
                     </p>
-                    </p>
-                    <p>
-
+                    <p className="mb-6">
                     <span className="font-bold"> Top Right </span>
-                    <p>
+                    </p>
+                    <p className="mb-6">
                     Even a plant-based diet can’t include 
                     produce alone. Our build-a-plate also 
                     emphasizes whole grains and proteins.
                     </p>
-                    </p>
 
-                    <p>
+                    <p className="mb-6">
                     <span className="font-bold"> Bottom Left </span>
-                    <p>
-
+                    </p>
+                    <p className="mb-6">
                     Anticipating some students might shy 
                     away from plant-based eating for 
                     nutrition concerns, we debunked those 
                     concerns head-on.
                     </p>
-                    </p>
-                    <p>
+                    <p className="mb-6">
                     <span className="font-bold"> Bottom Right </span>
-                    <p>
-
+                    </p>
+                    <p className="mb-6">
                     Even while emphasizing plant diets can 
                     be nutritious ones, we also acknowledged 
                     supplements can be incorporated, based 
                     on the person.
-                    </p>
                     </p>
                     </div>
                 </div>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row">
-                <img className="w-auto" src={bl}/>
-                <img className="w-auto" src={br}/>
+                <img className="md:w-1/2 w-full" src={bl}/>
+                <img className="md:w-1/2 w-full" src={br}/>
             </div> 
+        </div>
         </div>
     </>);
 }
