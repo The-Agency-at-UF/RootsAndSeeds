@@ -5,8 +5,8 @@ import rightarrow from "./EducationArrow.svg";
 import pic from "./MarketingPic.svg"
 
 function Marketing(){
-    return (<>
-        <div className="max-w-[1440px] mt-16 bg-[#C4DB96] flex flex-row justify-around"> 
+    return (<div className="min-h-screen flex flex-col items-center justify-center">
+        <div className="max-w-[1440px] w-full mt-16 bg-[#C4DB96] flex flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="h-full" src={image1}/>
                 <img className="h-full" src={image2}/>
@@ -41,8 +41,8 @@ function Marketing(){
             </p>
             </div>
         </div>
-        <img className="mt-16 mb-16" src={pic}/>
-    </>);
+        <img className="max-w-[1440px] mt-16 mb-16" src={pic}/>
+    </div>);
 }
 
 export default Marketing;

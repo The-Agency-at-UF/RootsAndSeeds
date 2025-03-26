@@ -9,7 +9,7 @@ import arrow from "./EducationArrow.svg"
 
 function Education(){
     return (<>
-    <div>
+    <div className="min-h-screen flex flex-col items-center justify-center">
         <div className="max-w-[1440px] mt-16 bg-[#C4DB96] flex flex-row justify-around"> 
             <div className="bg-[#53683F] flex flex-col items-center justify-center p-8">
                 <img className="w-auto" src={image1}/>
@@ -30,7 +30,7 @@ function Education(){
             </div>
             </div>
         </div>
-        <div className="mt-12 font-inter flex flex-col justify-center items-center">
+        <div className="max-w-[1440px] mt-12 font-inter flex flex-col justify-center items-center">
             <div className="flex flex-row"> 
                 <img className="w-1/3 " src={tl}/>
                 <img className="w-1/3" src={tr}/>

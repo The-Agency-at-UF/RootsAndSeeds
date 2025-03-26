@@ -4,7 +4,7 @@ import chart from "./Chart.svg";
 import plot from "./Plot.svg";
 
 function Feedback(){
-    return (<>
+    return (<div className="mt-12 min-h-screen flex flex-col items-center justify-center">
         <div className="max-w-[1440px] mt-8 ml-8 mr-8"> 
             <div className="w-full h-full flex flex-col space-y-6">
             <div className="flex flex-row justify-end items-end w-full">
@@ -58,7 +58,7 @@ function Feedback(){
             </div>
             </div>
         </div>
-    </>);
+    </div>);
 }
 
 export default Feedback;

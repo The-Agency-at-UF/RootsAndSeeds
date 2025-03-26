@@ -8,10 +8,10 @@ import right from "./RightArrow.svg";
 
 function Program() {
     return (
-        <>
+        <div className="min-h-screen flex flex-col items-center justify-center">
             <div className="max-w-[1440px] flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center m-5">
-                    <div className="flex flex-row">
+                    <div className="flex flex-row mb-7">
                     <img className="mr-5" src ={left}/>
                     <h1 className="text-[#BE790B] font-lilita text-7xl whitespace-nowrap text-center">
                         Program Content
@@ -21,7 +21,7 @@ function Program() {
                     <img className="mt-5 max-w-full" src={menu} />
                 </div>
                 <div className="flex flex-col justify-center items-center m-5">
-                    <div className="flex flex-row">
+                    <div className="flex flex-row mt-7 mb-7">
                     <img className="mr-5" src = {left}/>
                     <h1 className="text-[#BE790B] font-lilita text-7xl whitespace-nowrap text-center">
                         Menu Items
@@ -31,7 +31,7 @@ function Program() {
                     <img className="mt-5 max-w-full" src={items} />
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
