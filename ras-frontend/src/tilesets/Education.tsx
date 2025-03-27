@@ -78,7 +78,7 @@ function Education(){
                 </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-row">
                 <img className="w-1/2" src={bl}/>
                 <img className="w-1/2" src={br}/>
             </div> 
